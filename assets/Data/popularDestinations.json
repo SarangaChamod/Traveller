@@ -1,0 +1,34 @@
+[
+    {
+      "id": "1",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/134853914.jpg?k=20b8e4341a5e59bdad9cb5668a3808d0ab470927eefc9f9ec7c8a8aef1a5c512&o=&hp=1",
+      "name": "Lakewood Residence",
+      "location": "Kandy, Sri Lanka"
+    },
+    
+    {
+      "id": "2",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/82093876.jpg?k=0e2622ff9ceca1c0520fc8edb1ae1f089485429ea41841226de5dfeae4d93249&o=&hp=1",
+      "name": "Sky Lodge",
+      "location": "Kandy, Sri Lanka"
+    },
+    {
+      "id": "3",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/527451682.jpg?k=796af62a6ce22144094117a5a42e4e84c3b8736fb731932f122b5cff8b272fb7&o=&hp=1",
+      "name": "Ceylon's House",
+      "location": "Kandy, Sri Lanka"
+    },
+    {
+      "id": "4",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/159043924.jpg?k=5d075cdf9ce41725ea891640e58ac5e8a8a289bf1791d91fe678bc02ca4a1bf4&o=&hp=1",
+      "name": "Grand Casa",
+      "location": "Kandy, Sri Lanka"
+    },
+    {
+      "id": "5",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/496172602.jpg?k=0a0e198dd3cf31fcac9d2da432db4e1a359c11883e7afbad5f784ff36b37a4d3&o=&hp=1",
+      "name": "CJ's House at Mawella",
+      "location": "Kandy, Sri Lanka"
+    }
+  ]
+  
