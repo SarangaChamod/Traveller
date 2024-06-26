@@ -1,15 +1,12 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
-
+import {  Text, TouchableOpacity, StyleSheet } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-const viewAllButton = () => {
+const ViewAllButton = ({ onPress}) => {
   return (
     <TouchableOpacity
       style={styles.viewAllContainer}
-      onPress={() => {
-        console.log("You tapped the button!");
-      }}
+      onPress={onPress}
     >
       <Text style={styles.viewAll}>view all </Text>
       <AntDesign name="arrowright" size={18} color="#0071ff" />
@@ -28,4 +25,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default viewAllButton;
+export default ViewAllButton;

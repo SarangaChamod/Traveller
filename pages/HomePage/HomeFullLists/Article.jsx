@@ -12,7 +12,7 @@ import React from "react";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import Data from "./../../../assets/Data/article.json";
 
-function Article() {
+function Article({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.TitleContainer}>
@@ -60,6 +60,7 @@ function Article() {
 }
 
 const styles = StyleSheet.create({
+  container:{backgroundColor: "red"},
   sectionTitle: {
     fontSize: 22,
     fontWeight: "500",

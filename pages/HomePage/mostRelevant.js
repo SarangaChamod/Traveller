@@ -10,18 +10,21 @@ import {
 } from "react-native";
 import React from "react";
 import { Feather } from "@expo/vector-icons";
-import Data from './../../assets/Data/popularDestinations.json';
+import { useNavigation } from "@react-navigation/native";
+import Data from "./../../assets/Data/popularDestinations.json";
 
 import ViewAllButton from "./components/viewAllButton";
 
+function PopularDestinations() {
+  const navigation = useNavigation();
 
-
-function mostRelevantFlatList() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.Title}>
         <Text style={styles.sectionTitle}>Popular Destinations</Text>
-        <ViewAllButton/>
+        <ViewAllButton
+          onPress={() => navigation.navigate("DestinationsFullPage")}
+        />
       </View>
       <FlatList
         horizontal={true}
@@ -106,8 +109,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginRight: 12,
-    alignItems:'center',
+    alignItems: "center",
   },
 });
 
-export default mostRelevantFlatList;
+export default PopularDestinations;

@@ -10,25 +10,28 @@ import {
 } from "react-native";
 import React from "react";
 import Data from "./../../assets/Data/article.json";
+import { useNavigation } from "@react-navigation/native";
 import ViewAllButton from "./components/viewAllButton";
 
-
-
 function MostRelevantFlatList() {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.Title}>
         <Text style={styles.sectionTitle}>Popular article</Text>
-        <ViewAllButton/>
+        <ViewAllButton onPress={() => navigation.navigate("ArticleFullPage")}/>
       </View>
 
       <FlatList
         numColumns={2}
         showsHorizontalScrollIndicator={false}
-        // contentContainerStyle={{ gap: 5 ,}}
         data={Data}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.TouchaBackground}>
+          <TouchableOpacity
+            style={styles.TouchaBackground}
+            onPress={() => props.navigation.navigate('Article', { articleId: item.id })}
+          >
             <Image source={{ uri: item.image }} style={styles.image} />
             <View style={styles.flatContainer}>
               <View style={styles.flatView}>
@@ -89,8 +92,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginRight: 12,
-    alignItems:'center',
-  }
+    alignItems: "center",
+  },
 });
 
 export default MostRelevantFlatList;

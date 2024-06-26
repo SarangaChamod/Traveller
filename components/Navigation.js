@@ -13,71 +13,69 @@ const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={{
-          headerShown: false,
-          tabBarStyle: Styles.conatiner,
-          tabBarItemStyle: Styles.tabItem,
-          tabBarActiveTintColor: "#0071ff",
-          tabBarInactiveTintColor: "gray",
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: Styles.conatiner,
+        tabBarItemStyle: Styles.tabItem,
+        tabBarActiveTintColor: "#0071ff",
+        tabBarInactiveTintColor: "gray",
+      }}
+      safeAreaInsets={{ bottom: 0 }}
+    >
+      <Tab.Screen
+        name="Home"
+        component={HomePage}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <AntDesign
+              name="home"
+              size={23}
+              color={focused ? "#0071ff" : "gray"}
+            />
+          ),
         }}
-        safeAreaInsets={{ bottom: 0 }}
-      >
-        <Tab.Screen
-          name="Home"
-          component={HomePage}
-          options={{
-            tabBarIcon: ({ focused }) => (
-              <AntDesign
-                name="home"
-                size={23}
-                color={focused ? "#0071ff" : "gray"}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="Saved"
-          component={Saved}
-          options={{
-            tabBarIcon: ({ focused }) => (
-              <AntDesign
-                name="appstore-o"
-                size={23}
-                color={focused ? "#0071ff" : "gray"}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="My Trips"
-          component={MyTrips}
-          options={{
-            tabBarIcon: ({ focused }) => (
-              <Octicons
-                name="location"
-                size={23}
-                color={focused ? "#0071ff" : "gray"}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="Settings"
-          component={Settings}
-          options={{
-            tabBarIcon: ({ focused }) => (
-              <AntDesign
-                name="setting"
-                size={23}
-                color={focused ? "#0071ff" : "gray"}
-              />
-            ),
-          }}
-        />
-      </Tab.Navigator>
-    </NavigationContainer>
+      />
+      <Tab.Screen
+        name="Saved"
+        component={Saved}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <AntDesign
+              name="appstore-o"
+              size={23}
+              color={focused ? "#0071ff" : "gray"}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="My Trips"
+        component={MyTrips}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <Octicons
+              name="location"
+              size={23}
+              color={focused ? "#0071ff" : "gray"}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={Settings}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <AntDesign
+              name="setting"
+              size={23}
+              color={focused ? "#0071ff" : "gray"}
+            />
+          ),
+        }}
+      />
+    </Tab.Navigator>
   );
 }
 
