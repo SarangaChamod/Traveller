@@ -18,7 +18,7 @@ export default function Navigation() {
         headerShown: false,
         tabBarStyle: Styles.conatiner,
         tabBarItemStyle: Styles.tabItem,
-        tabBarActiveTintColor: "#0071ff",
+        tabBarActiveTintColor: "#171717",
         tabBarInactiveTintColor: "gray",
       }}
       safeAreaInsets={{ bottom: 0 }}
@@ -31,7 +31,7 @@ export default function Navigation() {
             <AntDesign
               name="home"
               size={23}
-              color={focused ? "#0071ff" : "gray"}
+              color={focused ? "#171717" : "gray"}
             />
           ),
         }}
@@ -44,7 +44,7 @@ export default function Navigation() {
             <AntDesign
               name="appstore-o"
               size={23}
-              color={focused ? "#0071ff" : "gray"}
+              color={focused ? "#171717" : "gray"}
             />
           ),
         }}
@@ -57,7 +57,7 @@ export default function Navigation() {
             <Octicons
               name="location"
               size={23}
-              color={focused ? "#0071ff" : "gray"}
+              color={focused ? "#171717" : "gray"}
             />
           ),
         }}
@@ -70,7 +70,7 @@ export default function Navigation() {
             <AntDesign
               name="setting"
               size={23}
-              color={focused ? "#0071ff" : "gray"}
+              color={focused ? "#171717" : "gray"}
             />
           ),
         }}

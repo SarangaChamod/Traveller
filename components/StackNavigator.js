@@ -11,6 +11,7 @@ import ArticleFullPage from './../pages/HomePage/HomeFullLists/Article';
 import DestinationsFullPage from './../pages/HomePage/HomeFullLists/Destinations';
 
 import PopularDestinations from '../pages/HomePage/mostRelevant';
+import DetailScreen from '../pages/HomePage/components/DetailScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ const HomeStackNavigator = () => (
     <Stack.Screen name="ArticleFullPage" component={ArticleFullPage} options={{ headerShown: false }}/>
     <Stack.Screen name="DestinationsFullPage" component={DestinationsFullPage} options={{ headerShown: false }}/>
     <Stack.Screen name='PopularDestinations' component={PopularDestinations} options={{ headerShown: false }}/>
+    <Stack.Screen name='DetailScreen' component={DetailScreen} options={{ headerShown: false }}/>
 
   </Stack.Navigator>
 );

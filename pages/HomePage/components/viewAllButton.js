@@ -9,7 +9,7 @@ const ViewAllButton = ({ onPress}) => {
       onPress={onPress}
     >
       <Text style={styles.viewAll}>view all </Text>
-      <AntDesign name="arrowright" size={18} color="#0071ff" />
+      <AntDesign name="arrowright" size={18} color="#171717" />
     </TouchableOpacity>
   );
 };
@@ -17,7 +17,7 @@ const ViewAllButton = ({ onPress}) => {
 const styles = StyleSheet.create({
   viewAll: {
     fontSize: 14,
-    color: "#0071ff",
+    color: "#171717",
   },
   viewAllContainer: {
     flexDirection: "row",

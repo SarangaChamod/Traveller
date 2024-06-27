@@ -31,8 +31,12 @@ function PopularDestinations() {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ gap: 10 }}
         data={Data}
+        keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.TouchaBackground}>
+          <TouchableOpacity
+            style={styles.TouchaBackground}
+            onPress={() => navigation.navigate("DetailScreen", { item })}
+          >
             <Image
               source={{ uri: item.image }}
               style={{
