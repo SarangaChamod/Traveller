@@ -11,7 +11,7 @@ import {
 import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import Data from "./../../assets/Data/popularDestinations.json";
+import Data from "../../assets/Data/popularDestinations.json";
 
 import ViewAllButton from "./components/viewAllButton";
 

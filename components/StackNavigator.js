@@ -10,8 +10,8 @@ import SettingsPage from './../pages/SettingsPage/settings';
 import ArticleFullPage from './../pages/HomePage/HomeFullLists/Article';
 import DestinationsFullPage from './../pages/HomePage/HomeFullLists/Destinations';
 
-import PopularDestinations from '../pages/HomePage/mostRelevant';
-import DetailScreen from '../pages/HomePage/components/DetailScreen';
+import PopularDestinations from '../pages/HomePage/PopularDestinations';
+import DetailScreen from '../pages/HomePage/DeatilScreens/PopularDestinationsDetailScreen';
 
 const Stack = createStackNavigator();
 

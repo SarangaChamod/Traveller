@@ -11,8 +11,10 @@ import {
 import React from "react";
 import { Feather, Ionicons, AntDesign } from "@expo/vector-icons";
 import Data from "./../../../assets/Data/popularDestinations.json";
+import { useNavigation } from "@react-navigation/native";
 
-function Destinations({ navigation }) {
+function Destinations() {
+  const navigation = useNavigation();
   const handleIconPress = (destination) => {
     // Handle the icon press action here
     console.log(`Icon pressed for destination: ${destination.name}`);
@@ -33,9 +35,11 @@ function Destinations({ navigation }) {
       <FlatList
         showsHorizontalScrollIndicator={false}
         data={Data}
+        keyExtractor={(item) => item.id}
         contentContainerStyle={{ gap: 10 }}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.touchableBackground}>
+          <TouchableOpacity style={styles.touchableBackground}
+          onPress={() => navigation.navigate("DetailScreen", { item })}>
             <View style={styles.imageContainer}>
               <Image
                 source={{ uri: item.image }}

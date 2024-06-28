@@ -2,7 +2,7 @@ import { View, ImageBackground, ScrollView } from "react-native";
 import React from "react";
 
 import IBcomponent from "./Imagebackground.js";
-import MostRelevantFlatList from "./mostRelevant.js";
+import MostRelevantFlatList from "./PopularDestinations.js";
 import PopularArticles from "./article.js";
 
 const HomePage = () => {
